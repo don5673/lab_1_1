@@ -10,7 +10,7 @@ int main()
 	Triangle triangleR;
 	try
 	{
-		triangleR =	testingFunctions::input();
+		triangleR = testingFunctions::input();
 	}
 	catch (const std::invalid_argument& error)
 	{
@@ -36,7 +36,7 @@ int main()
 		: "The triangles are not equal\n");
 
 	std::cout << ((testingFunctions::isEqualSquare(triangleP, triangleR))
-		? "The triangles are equal\n"
+		? "The areas are equal\n"
 		: "The areas are not equal\n");
 
 	int k = 0;

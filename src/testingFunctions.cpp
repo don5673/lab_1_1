@@ -1,12 +1,13 @@
 #include "testingFunctions.h"
 
 #include <iostream>
+#include <cmath>
 
 bool testingFunctions::isEqualSquare(Triangle& t1, Triangle& t2)
 {
 	double t1Perimeter = (t1.getPerimeter() / 2);
 	double t1Square = std::sqrt(t1Perimeter * (t1Perimeter - t1.getAB())
-			* (t1Perimeter - t1.getBC()) * (t1Perimeter - t1.getAC()));
+		* (t1Perimeter - t1.getBC()) * (t1Perimeter - t1.getAC()));
 
 	double t2Perimeter = (t2.getPerimeter() / 2);
 	double t2Square = std::sqrt(t2Perimeter * (t2Perimeter - t2.getAB())
